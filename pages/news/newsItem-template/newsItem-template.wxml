@@ -1,0 +1,18 @@
+<!--pages/news/newsItem-template/newsItem-template.wxml-->
+<template name="newsItem">
+  <view class="news_container">
+      <view class="news_authorAnddate">
+        <image class="news_author" src="{{avatar}}"></image>
+        <text class="news_date">{{date}}</text>
+      </view>
+      <text class="news_title">{{title}}</text>
+      <image class="news_img" src="{{imgSrc}}"></image>
+      <text class="news_content">{{content}}</text>
+      <view class="news_like">
+        <image class="news_like-icon" src="../../images/icon/chat.png"></image>
+        <text class="news_like-text">{{collection}}</text>
+        <image class="news_like-icon" src="../../images/icon/view.png"></image>
+        <text class="news_like-text">{{reading}}</text>
+      </view>
+    </view>
+  </template>

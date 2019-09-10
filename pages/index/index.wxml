@@ -1,0 +1,10 @@
+<view class="container">
+  <image wx:if="{{userInfo.avatarUrl}}" class='user_logo' src="{{userInfo.avatarUrl}}"></image>
+  <text wx:else class='user_logo' src="{{userInfo.avatarUrl}}" catchtap="getUserInfo">点击\n获取用户头像</text>
+  <text class="user_name">{{userInfo.nickName}}</text>
+  <view class="container_btn" bindtap="onTap">
+    <text class="btn_text">开启小程序之旅</text>
+  </view>
+</view>
+<!-- Hello,七月 {{userInfo.nickName}} -->
+<!-- /images/avatar/1.png  {{userInfo.avatarUrl}}-->

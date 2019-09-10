@@ -1,0 +1,7 @@
+<!--pages/flex.wxml-->
+<view class="container">
+  <view class="viewItem"></view>
+  <view class="viewItem"></view>
+  <view class="viewItem"></view>
+  <view class="viewItem"></view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/swiper/swiper.wxml-->
+<view>
+  <swiper class="swiper_container" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+    <swiper-item class="swiper_item"><image src="/images/post/xiaolong.jpg"></image></swiper-item>
+    <swiper-item class="swiper_item"><image src="/images/post/vr.png"></image></swiper-item>
+    <swiper-item class="swiper_item"><image src="/images/post/sls.jpg"></image></swiper-item>
+    <swiper-item class="swiper_item"><image src="/images/post/crab.png"></image></swiper-item>
+  </swiper>
+</view>

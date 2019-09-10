@@ -1,0 +1,13 @@
+<!--pages/news/news.wxml-->
+<import src="newsItem-template/newsItem-template.wxml" />
+<view class="detail_container">
+  <swiper class="swiper_container" autoplay="{{true}}" indicatorDots="{{true}}" interval="5000" circular="{{true}}" catchtap="onPostTap">
+    <swiper-item wx:for="{{postList}}" wx:for-item="item" wx:for-index="index" wx:key="index" data-postId="{{item.postId}}"><image src="{{item.imgSrc}}"></image></swiper-item>
+  </swiper>
+
+  <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="index" wx:key="{{item.postId}}">
+    <view catchtap="onPostTap" data-postId="{{item.postId}}">
+      <template is="newsItem" data="{{...item}}" />
+    </view>
+  </block>
+</view>
